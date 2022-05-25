@@ -1,16 +1,22 @@
-var mysql = require('mysql');
+const express = require('express')
+const bodyParser = require('body-parser')
+const app = express()
+const port = 3000
+const db = require('./queries')
+app.use(bodyParser.json())
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+)
 
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "password",
-  database: 'todoapp'
-});
+app.get('/', (request, response) => {
+  response.json({ info: 'Node.js, Express, and Postgres API' })
+})
 
-con.connect(function(err) {
-  if (err) throw err
-  console.log("Connected!")
+app.get('/plants', db.getPlants)
+app.get('/plants/:id', db.getOnePlant)
+app.listen(port, () => {
+  console.log(`App running on port ${port}.`)
+})
 
-  const sql = 'CREATE TABLE '
-
-});

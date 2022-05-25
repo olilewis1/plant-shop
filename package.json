@@ -1,7 +1,23 @@
 {
+  "name": "programming-languages-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo / error"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "restapi"
+  ],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
     "mongodb": "^4.5.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "pg": "^8.7.3"
   }
 }
