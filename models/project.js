@@ -12,4 +12,4 @@ const plantsSchema = new Schema({
 
 const Plants = mongoose.model('Plants', plantsSchema)
 
-module.exports = {Plants}
+module.exports = { Plants }

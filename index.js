@@ -1,6 +1,8 @@
+
+
 const mongoose = require('mongoose')
 const express = require('express')
-const cors = require('cors')
+const cors = require('cors');
 
 
 const plantsRoutes = require('./routes/plantsRoutes')
@@ -14,6 +16,7 @@ const dbURI = 'mongodb+srv://admin:flynn123@cluster0.h1o1d.mongodb.net/?retryWri
 
 
 
+
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(function(result) {
         console.log('Database is connected');
@@ -21,13 +24,16 @@ mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     .catch((err) => console.log(err))
 
 
- app.use(cors())
 
-app.get('/',(req, res) => res.send('Hello from homepage'))
+
+// apply cors policy 
+app.use(cors())
+
+
 
 app.listen(PORT, () => console.log(`Server is up and running on ${PORT}`))
 
 
 app.use(bodyParser.json())
 
-app.use('/allplants', plantsRoutes)
+app.use('/', plantsRoutes)
