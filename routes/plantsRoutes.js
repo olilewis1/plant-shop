@@ -1,13 +1,25 @@
-const express = require('express') 
-const plantsConrtroller = require('../controllers/plantsController')
-
+import express from 'express'
+import { plants_create, plants_get_byID, plants_get_all, delete_plant } from '../controllers/plantsController.js'
+import {getUserProfiles} from '../controllers/user.js'
+import { registerUser, loginUser} from '../controllers/auth.js'
+import { secureRoute } from '../config/secureRoute.js'
 const router = express.Router()
 
 router.route('/plants')
- .get(plantsConrtroller.plants_get_all)
- .post(plantsConrtroller.plants_create)
+ .get(plants_get_all)
+ .post(plants_create)
 
 router.route('/plants/:id')
- .get(plantsConrtroller.plants_get_byID)
- .delete(plantsConrtroller.delete_show)
-module.exports = router
+ .get(secureRoute, plants_get_byID)
+ .delete(delete_plant)
+
+
+
+router.route('/user')
+  .get(getUserProfiles)
+router.route('/register')
+  .post(registerUser)
+router.route('/login')
+  .post(loginUser)
+
+  export default router

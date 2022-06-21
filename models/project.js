@@ -1,4 +1,4 @@
-const mongoose = require('mongoose') 
+import mongoose from 'mongoose'
 
 const Schema = mongoose.Schema
 
@@ -10,6 +10,4 @@ const plantsSchema = new Schema({
   plant_pictures: [String]
 })
 
-const Plants = mongoose.model('Plants', plantsSchema)
-
-module.exports = { Plants }
+export default mongoose.model('Plants', plantsSchema)

@@ -1,7 +1,7 @@
-const { Plants } = require('../models/project')
+import Plants from '../models/project.js'
 
 
-const plants_get_all = (req, res) => { 
+export const plants_get_all = (req, res) => { 
   Plants.find()
   .then(result => { 
     res.status(200).send(result)
@@ -14,7 +14,7 @@ const plants_get_all = (req, res) => {
 }
 
 
-const plants_get_byID = async (req, res) => { 
+export const plants_get_byID = async (req, res) => { 
   try { const id = req.params.id
   const plant = await Plants.findById(id)
   if(!plant) { 
@@ -27,7 +27,7 @@ const plants_get_byID = async (req, res) => {
 }
 }
 
-const plants_create = (req, res) => {
+export const plants_create = (req, res) => {
   const plants = new Plants(req.body);
   plants.save()
       .then(result => {
@@ -38,7 +38,7 @@ const plants_create = (req, res) => {
       });
 }
 
-const delete_show = async (req, res) => { 
+export const delete_plant = async (req, res) => { 
   try { 
     const { id } = req.params 
     const plantToDelete = await Plants.findById(id)
@@ -51,9 +51,3 @@ const delete_show = async (req, res) => {
   }
 }
 
-module.exports = { 
-  plants_get_all, 
-  plants_create, 
-  plants_get_byID, 
-  delete_show
-}

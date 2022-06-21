@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo / error"
+    "test": "echo / error",
+    "seed": "node db/seeds.js",
+    "start": "node index.js"
   },
   "keywords": [
     "nodejs",
@@ -12,10 +14,13 @@
     "mysql",
     "restapi"
   ],
+  "type": "module",
   "author": "",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.5.0",
     "mongoose": "^6.3.5",
     "mysql": "^2.18.1",
