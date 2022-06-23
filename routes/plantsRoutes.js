@@ -2,7 +2,9 @@ import express from 'express'
 import { plants_create, plants_get_byID, plants_get_all, delete_plant } from '../controllers/plantsController.js'
 import {getUserProfiles} from '../controllers/user.js'
 import { registerUser, loginUser} from '../controllers/auth.js'
+import {getAllPages, createPage, updatePage, deletePage } from '../controllers/page.js'
 import { secureRoute } from '../config/secureRoute.js'
+
 const router = express.Router()
 
 router.route('/plants')
@@ -22,4 +24,12 @@ router.route('/register')
 router.route('/login')
   .post(loginUser)
 
+  //pages 
+router.route('/pages')
+  .get(getAllPages)
+  .post(createPage)
+
+router.route('/pages/:id')
+  .put(updatePage)
+  .delete(deletePage)
   export default router
