@@ -16,6 +16,8 @@ const dbURI = 'mongodb+srv://admin:flynn123@cluster0.h1o1d.mongodb.net/?retryWri
 
 
 
+//'mongodb+srv://admin:flynn123@cluster0.h1o1d.mongodb.net/test'
+
 
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(function(result) {
