@@ -7,7 +7,7 @@ import flowersBottomImageLeft from '../assets/Photo 14-7-2022, 10 21 55 am.jpg'
 import flowersBottomImageRight from '../assets/Photo 17-7-2022, 2 10 31 pm.jpg'
 const Home = () => {
   return (
-    <div >
+    <div className='home' >
       <div className=''> 
         <img src={mainImageHome} alt='bo' className="img-fluid h-50"/>
       </div>
@@ -15,7 +15,7 @@ const Home = () => {
       <div class="row m-5 p-5 d-flex justify-content-center"> 
         <h1 className="text-center w-50 ">Brightening homes with unique, durable products.</h1>
       </div>
-      <div class="container d-flex justify-content-evenly "> 
+      <div class="container d-flex justify-content-evenly mb-5 "> 
         <div className="w-50"> 
           <img src={closeUpFlowersLookingGood}  alt='hi' className='img-fluid'/>
         </div>
@@ -37,16 +37,21 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='container d-flex justify-content-evenly'> 
-        <div>
-          <img src={flowersBottomImageLeft} alt='hi' className='img-fluid p-5' />
-          <p>Explore</p>
-          <p>The Core Collection</p>
+      <div className='container d-flex justify-content-around mt-5'> 
+        <div className=' p-2 position-relative' >
+          <img src={flowersBottomImageLeft} alt='hi' className='img-fluid  ' />
+          <div className='position-absolute bottom-0 start-0 p-5'> 
+          <h4 className='text-light'>Explore</h4>
+          <h1 className='text-light'>The Core Collection</h1>
+            </div>       
         </div>
-        <div> 
-          <img src={flowersBottomImageRight} alt='hi' className='img-fluid p-5'/>
-          <p>Start Fresh</p>
-          <p>Sets and Pairs</p>
+        <div className=' position-relative p-2'> 
+          <img src={flowersBottomImageRight} alt='hi' className='img-fluid '/>
+          <div className='position-absolute bottom-0 start-0 p-5'>
+          <h4 className='  text-light'>Start Fresh</h4>
+          <h1 className=' text-light'>Sets and Pairs</h1>
+          </div>
+
         </div>
       </div>
       </div>
