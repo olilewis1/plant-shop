@@ -1,3 +1,19 @@
 @import "~bootstrap/scss/bootstrap";
 
+.nav-home{
+    background-image: url('assets/Ventura_files/static1.squarespace.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+};
 
+
+
+@media screen and (min-width: 1000px) {
+  .nav-home{
+    background-image: url('assets/Ventura_files/static1.squarespace.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+};
+}

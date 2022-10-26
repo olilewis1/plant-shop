@@ -1,8 +1,14 @@
 import React from 'react'
-
+//import mainImageHome from '../assets/Ventura_files/static1.squarespace.jpg'
 const Navbar = () => {
   return (
-    <div className='d-flex flex-row justify-content-between navbar navbar-expand-lg navbar-fixed-top nav shadow-5-strong'>
+    <div className='nav-home text-light'>
+  {/* <div className=''> 
+    <img src={mainImageHome} alt='bo' className="img-fluid h-50"/>
+  </div>  */}
+    <div className='d-flex flex-row justify-content-between navbar navbar-expand-sm  navbar-expand-sm  navbar-light '>
+     
+     
       <div className='ms-5'> 
         <h1>Love-Mambo</h1>
       </div>
@@ -14,6 +20,7 @@ const Navbar = () => {
         <h5 className='me-3'>Face</h5>
         <h5 className='me-3'>Basket</h5>
       </div>
+    </div>
     </div>
   )
 }

@@ -8,9 +8,6 @@ import flowersBottomImageRight from '../assets/Photo 17-7-2022, 2 10 31 pm.jpg'
 const Home = () => {
   return (
     <div className='home' >
-      <div className=''> 
-        <img src={mainImageHome} alt='bo' className="img-fluid h-50"/>
-      </div>
       <div className='container'> 
       <div class="row m-5 p-5 d-flex justify-content-center"> 
         <h1 className="text-center w-50 ">Brightening homes with unique, durable products.</h1>
