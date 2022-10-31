@@ -1,11 +1,25 @@
 @import "~bootstrap/scss/bootstrap";
 
+
+.home { 
+  .image-email-enter{
+    background-image: url('assets/Ventura_files/static1.squarespace.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+  }
+}
+
+
+
 .nav-home{
     background-image: url('assets/Ventura_files/static1.squarespace.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
 };
+
 
 
 
@@ -17,3 +31,8 @@
     height: 110vh;
 };
 }
+
+
+
+
+

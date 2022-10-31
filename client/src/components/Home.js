@@ -52,6 +52,22 @@ const Home = () => {
         </div>
       </div>
       </div>
+      <div className=' position-relative mt-5 image-email-enter'> 
+      <div className=''>
+          </div>
+          <div className='position-absolute top-50 start-50 translate-middle text-center'>
+          <h1 className='  text-light mb-5'>Monthly Dispatch</h1>
+          <h4 className=' text-light'>Sign up to receive news and updates.</h4>
+          <div className='d-flex mt-5 needs-validation' > 
+          <div className='w-75  me-2'>    
+            <input type="email" class="form-control  " id="exampleInputEmail1" aria-describedby="emailHelp" /> 
+          </div>
+          
+
+    <button type="submit" class="btn btn-primary w-25">Submit</button>
+          </div>
+          </div>
+          </div>
     </div>
   )
 }

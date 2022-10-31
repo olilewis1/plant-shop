@@ -13,33 +13,27 @@ const Footer = () => {
            <div className='Container'> 
            <div className='row'> 
            <div className='col'>
-           <p>Shop</p>
+           <p><u>Shop</u></p>
             </div>
           <div className='col'> 
-            <p>Contact</p>
+            <p><u>Contact</u></p>
             </div>
             </div>
             <div className='row'>
               <div className='col'>
-              <p>About</p>
+              <p><u>About</u></p>
                  </div>
             <div className='col'>
-            <p>Email</p> </div>
+            <p><u>Email</u></p> </div>
 
             </div>
            </div>
         
       </div>
       <div className='mt-2'> 
-        <icon className='pe-2'> 
-          Insta
-        </icon>      
-          <icon className='pe-2'> 
-          Face
-        </icon>       
-         <icon> 
-          Twit
-        </icon>
+      <a href='facebook.com'><i class="bi bi-instagram pe-2"></i>    </a>
+      <i class="bi bi-facebook pe-2"></i>    
+      <i class="bi bi-github"></i>
       </div>
     </div>
   )
