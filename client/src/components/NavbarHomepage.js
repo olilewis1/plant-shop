@@ -1,6 +1,6 @@
 import React from 'react'
 //import mainImageHome from '../assets/Ventura_files/static1.squarespace.jpg'
-const Navbar = () => {
+const NavbarHomepage = () => {
   return (
     <div className='nav-home text-light'>
   {/* <div className=''> 
@@ -25,4 +25,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarHomepage
