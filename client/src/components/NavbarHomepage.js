@@ -1,6 +1,18 @@
 import React from 'react'
+import { counterActions, incrementHandler } from '../Store/index'
+import { useDispatch } from 'react-redux';
+
 //import mainImageHome from '../assets/Ventura_files/static1.squarespace.jpg'
 const NavbarHomepage = () => {
+  const dispatch = useDispatch();
+  const incrementHandler = (event) => {
+    console.log(event.target.name);
+    if (event.target.name === "one") {
+      dispatch(counterActions.increment())
+    }
+  };
+
+  
   return (
     <div className='nav-home text-light'>
   {/* <div className=''> 
