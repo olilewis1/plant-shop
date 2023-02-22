@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import "bootstrap/js/src/collapse.js";
 import { counterActions } from '../Store/index'
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
@@ -21,31 +22,51 @@ const NavbarHomepage = () => {
   };
  const counterState =  useSelector((state) => state.counter) 
  
+ const [toggleNavClass, setToggleNavClass ] = useState(true)
+const handleNavToggle = () =>  { 
+console.log('omne', toggleNavClass)
+const falseTog = false 
+const trueTog = true
+if (toggleNavClass === true) { 
+  console.log('hi', toggleNavClass)
+  setToggleNavClass(falseTog)
+}
+if (toggleNavClass === false) { 
+  setToggleNavClass(trueTog)
+}
+
+}
 
 
   return (
     <div> 
       {counterState.counter ?     <div className='nav-home text-light'>
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid "> <Link to='/' name='two' onClick={incrementHandler} className="btn text-light btn-outline-* fs-1 navbar-brand">Love-Mambo</Link>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class=' collapse navbar-collapse justify-content-md-end ' id="navbarTogglerDemo02">
+
+      <div class="navbar-nav d-sm-flex align-items-start" >
+
+      <Link to='/shop' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item ' name='one'>Shop</Link>
+        <Link to='/about' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one' >About</Link>
+        <Link to='/contact' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'>Contact</Link>
+        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'>Insta</a>
+        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'>Face</a>
+        <Link to='/basket' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'>Basket</Link>
+      </div>
+    </div>
+  </div>
+</nav>
+        
   {/* <div className=''> 
     <img src={mainImageHome} alt='bo' className="img-fluid h-50"/>
   </div>  */}
-    <div className='d-flex flex-row justify-content-between navbar navbar-expand-sm  navbar-expand-sm  navbar-light '>
-     
-     
-      <div className='ms-5' > 
-        <Link to='/' name='two' onClick={incrementHandler} className="btn text-light btn-outline-* fs-1 ">Love-Mambo</Link>
-      </div>
-      <div className='d-flex flex-row me-5 justify-content-center 
-      mw-100'> 
-        <Link to='/shop' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 ' name='one'>Shop</Link>
-        <Link to='/about' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 ' name='one' >About</Link>
-        <Link to='/contact' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 ' name='one'>Contact</Link>
-        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 ' name='one'>Insta</a>
-        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 ' name='one'>Face</a>
-        <Link to='/basket' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 ' name='one'>Basket</Link>
-      </div>
-    </div>
     </div> : 
+    
     
     
 <div className='nav-home-No-Image text-dark'>
