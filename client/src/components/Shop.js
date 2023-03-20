@@ -8,7 +8,10 @@ const Shop = () => {
         <p className='fs-1 text'> Shop</p>
 
       </div>
-      <div className='container'>      <hr className=''></hr> </div>
+      <div className='container'>     
+       <hr className=''></hr>  
+      
+      </div>
 
     </div>
   )
