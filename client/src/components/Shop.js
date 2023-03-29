@@ -1,5 +1,6 @@
 import React from 'react'
 import shopImage from '../assets/shopimage.jpg'
+import FadeIn from 'react-fade-in'
 const Shop = () => {
   return (
     <div>
@@ -12,7 +13,7 @@ const Shop = () => {
        <hr className=''></hr>  
       
       </div>
-
+<FadeIn delay={200}>
   <div className='container'>
 <div className='row pt-5'> 
 <div class="card col-sm-4  border-0 mobile-space" >
@@ -76,6 +77,7 @@ const Shop = () => {
 </div>
 
       </div>
+      </FadeIn>
     </div>
   )
 }

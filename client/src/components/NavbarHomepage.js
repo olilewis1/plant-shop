@@ -15,6 +15,9 @@ console.log(location)
     dispatch(counterActions.decrement())
     console.log('hissss')
   }
+  else { 
+    dispatch(counterActions.increment())
+  }
  const [toggleNavClass, setToggleNavClass ] = useState(true)
  
   const incrementHandler = (event) => {

@@ -1,5 +1,6 @@
 import React from 'react'
 import bexPic from '../assets/bexPicture.jpg'
+import FadeIn from 'react-fade-in'
 const About = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const About = () => {
    <hr className=''></hr>  
   
   </div>
+  <FadeIn delay={100}> 
     <div className='container d-flex flex-column align-items-center'>
 
 
@@ -28,6 +30,7 @@ const About = () => {
         </p>
 
     </div>
+    </FadeIn>
     </div>
   )
 }

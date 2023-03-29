@@ -1,8 +1,9 @@
 import React from 'react'
-
+import FadeIn from 'react-fade-in'
 const Contact = () => {
   return (
     <>
+    <FadeIn delay={100}> 
     <div className='container '>
       <div className='row justify-content-center'> 
       <div className='col-sm-4'> 
@@ -55,6 +56,7 @@ const Contact = () => {
 
 
     </div>
+    </FadeIn>
 <div className='home'> 
 <div className=' position-relative mt-5  image-email-enter'> 
 <div className=''>

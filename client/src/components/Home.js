@@ -5,13 +5,16 @@ import closeUpFlowerImage from '../assets/Photo 31-8-2022, 2 32 22 pm (1).jpg'
 import closeUpFlowersLookingGood from '../assets/Photo 4-7-2022, 12 06 24 pm.jpg'
 import flowersBottomImageLeft from '../assets/Photo 14-7-2022, 10 21 55 am.jpg'
 import flowersBottomImageRight from '../assets/Photo 17-7-2022, 2 10 31 pm.jpg'
+import Zoom from 'react-reveal/Zoom';
 const Home = () => {
   return (
     <div className='home' >
       <div className='container'> 
+
       <div class="row m-5 p-5 d-flex justify-content-center"> 
         <h1 className="text-center w-50 ">Brightening homes with unique, durable products.</h1>
       </div>
+      
       <div class="container d-flex justify-content-evenly mb-5 "> 
         <div className="w-50"> 
           <img src={closeUpFlowersLookingGood}  alt='hi' className='img-fluid'/>
