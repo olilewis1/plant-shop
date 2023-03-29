@@ -64,9 +64,9 @@ console.log(location)
       <Link to={'/shop'} onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'  >Shop</Link>
         <Link to='/about' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one' >About</Link>
         <Link to='/contact' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'>Contact</Link>
-        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'>Insta</a>
-        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'>Face</a>
-        <Link to='/basket' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'>Basket</Link>
+        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'><i class="bi bi-instagram pe-2"></i></a>
+        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'> <i class="bi bi-facebook pe-2"></i> </a>
+        <Link to='/basket' onClick={incrementHandler} className='me-3 btn text-light btn-outline-* fs-4 nav-item' name='one'><i class="bi bi-basket"></i></Link>
       </div>
     </div>
   </div>
@@ -91,9 +91,9 @@ console.log(location)
       <Link to='/shop' onClick={incrementHandler} className='me-3 btn  text-dark btn-outline-* fs-4 nav-item' name='one'  >Shop</Link>
         <Link to='/about' onClick={incrementHandler} className='me-3 btn  text-dark btn-outline-* fs-4 nav-item' name='one' >About</Link>
         <Link to='/contact' onClick={incrementHandler} className='me-3 btn  text-dark btn-outline-* fs-4 nav-item' name='one'>Contact</Link>
-        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn  text-dark btn-outline-* fs-4 nav-item' name='one'>Insta</a>
-        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn  text-dark btn-outline-* fs-4 nav-item' name='one'>Face</a>
-        <Link to='/basket' onClick={incrementHandler} className='me-3 btn  text-dark btn-outline-* fs-4 nav-item' name='one'>Basket</Link>
+        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn  text-dark btn-outline-* fs-4 nav-item' name='one'><i class="bi bi-instagram pe-2"></i></a>
+        <a  href='https://www.bbc.co.uk'  onClick={incrementHandler} className='me-3 btn  text-dark btn-outline-* fs-4 nav-item' name='one'> <i class="bi bi-facebook pe-2"></i> </a>
+        <Link to='/basket' onClick={incrementHandler} className='me-3 btn  text-dark btn-outline-* fs-4 nav-item' name='one'><i class="bi bi-basket"></i></Link>
       </div>
     </div>
   </div>
