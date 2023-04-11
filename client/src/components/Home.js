@@ -12,10 +12,13 @@ const Home = () => {
       <div className='container'> 
 
       <div class="row m-5 p-5 d-flex justify-content-center"> 
+      <Zoom> 
         <h1 className="text-center w-50 ">Brightening homes with unique, durable products.</h1>
+        </Zoom>
       </div>
-      
+
       <div class="container d-flex justify-content-evenly mb-5 "> 
+    <Zoom> 
         <div className="w-50"> 
           <img src={closeUpFlowersLookingGood}  alt='hi' className='img-fluid'/>
         </div>
@@ -36,8 +39,10 @@ const Home = () => {
             <button className="btn btn-dark">Shop All</button>
           </div>
         </div>
+        </Zoom>
       </div>
       <div className='container d-flex justify-content-around mt-5'> 
+      <Zoom> 
         <div className=' p-2 position-relative' >
           <img src={flowersBottomImageLeft} alt='hi' className='img-fluid  ' />
           <div className='position-absolute bottom-0 start-0 p-5'> 
@@ -51,9 +56,11 @@ const Home = () => {
           <h4 className='  text-light'>Start Fresh</h4>
           <h1 className=' text-light'>Sets and Pairs</h1>
           </div>
-
         </div>
+</Zoom>
+
       </div>
+      
       </div>
       <div className=' position-relative mt-5 image-email-enter'> 
       <div className=''>
